@@ -6,6 +6,6 @@
 * Calculus of constructions: lambda calculus
 * Natural number game: [http](https://wwwf.imperial.ac.uk/~buzzard/xena/natural_number_game)
 
-## Visualizations
+## 🖼️ Visualizations
 * MIT Mathlets: [http](http://mathlets.org/mathlets/)
 
