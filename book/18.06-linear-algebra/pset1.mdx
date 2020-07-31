@@ -1,7 +1,7 @@
 ---
 title: 18.06 Fall 2010 Problem Set 1
 date: 2020-07-30
-slug: linalg/fa10-ps1
+slug: linalg/fa10ps1
 ---
 
 **Problem 1.** Find a solution for $x$, $y$, $z$ to the system of equations
@@ -92,24 +92,107 @@ From this, we can see the answer.
 </details>
 
 **Problem 2 (Strang, 2.1.11).**
+Find the two components of $A\mathbf{x}$ by rows or by columns:
 
-**Problem 3 (String, 2.1.26).**
+$$
+\begin{bmatrix}
+2 & 3\\
+5 & 1\\
+\end{bmatrix}
+\begin{bmatrix}
+4\\
+2\\
+\end{bmatrix}
 
-**Problem 4 (Strang, 2.2.7).**
+\text{ and }
 
-**Problem 5 (Strang, 2.2.31).**
+\begin{bmatrix}
+3 & 6\\
+6 & 12\\
+\end{bmatrix}
+\begin{bmatrix}
+2\\
+-1\\
+\end{bmatrix}
 
-**Problem 6 (Strang, 2.3.21).**
+\text{ and }
 
-**Problem 7 (Strang, 2.4.23).**
+\begin{bmatrix}
+1 & 2 & 4\\
+2 & 0 & 1\\
+\end{bmatrix}
+\begin{bmatrix}
+3\\
+1\\
+1\\
+\end{bmatrix}
+$$
 
-**Problem 8 (Strang, 2.4.32).**
+<details>
+<summary>Solution.</summary>
 
-**Problem 9 (Strang, 2.5.6).**
+hi
+
+</details>
+
+**Problem 3 (String, 2.1.26).** Draw the row and column pictures for the equations $x - 2y = 0, x + y = 6$.
+
+**Problem 4 (Strang, 2.2.7).** For which numbers $a$ does elimination break down (1) permanently, and (2) temporarily?
+
+$$
+\begin{aligned}
+   ax+ 3y &= -3\\
+   4x+ 6y &= 6
+\end{aligned}
+$$
+
+**Problem 5 (Strang, 2.2.31).** Suppose elimination takes $A$ to $U$ without row exchanges. Then row $j$ of $U$ is a combination of which rows of $A$? If $A\mathbf{x} = \mathbf{0}$, is $U\mathbf{x} = \mathbf{0}$? If $A\mathbf{x} = \mathbf{b}$, is $U\mathbf{x} = \mathbf{b}$? If $A$ starts out lower triangular, what is the upper triangular $U$?
+
+**Problem 6 (Strang, 2.3.21).** If $E$ adds row 1 to row 2 and $F$ adds row 2 to row 1, does $EF$ equal $FE$?
+
+**Problem 7 (Strang, 2.4.23).** (a) Find a nonzero matrix $A$ for which $A^2 = 0$. (b) Find a matrix that has $A^2\ \cancel=\ 0$ but $A^3 = 0$.
+
+**Problem 8 (Strang, 2.4.32).** Suppose you solve $A\mathbf{x} = \mathbf{b}$ for three special right sides $\mathbf{b}$:
+
+$$
+A\mathbf{x_1} =
+\begin{bmatrix}
+1\\
+0\\
+0\\
+\end{bmatrix}
+
+\text{ and }
+
+A\mathbf{x_2} =
+\begin{bmatrix}
+0\\
+1\\
+0\\
+\end{bmatrix}
+
+\text{ and }
+
+A\mathbf{x_3} =
+\begin{bmatrix}
+0\\
+0\\
+1\\
+\end{bmatrix}
+
+$$
+
+If the three solutions $\mathbf{x_1}$, $\mathbf{x_2}$, and $\mathbf{x_3}$ are the columns of a matrix $X$, what is $AX$?
+
+**Problem 9 (Strang, 2.5.6).** (a) If $A$ is invertible and $AB = AC$, prove that $B = C$. (b) If $A = \begin{bmatrix}
+1 & 1\\
+1 & 1\\
+\end{bmatrix}$, find two different matrices such that $AB = BC$.
 
 **Problem 10.** In the language of your choice, write a function “rowop” that takes a matrix $A$ and replaces the second row with the original second row minus 10 times the first row.
 
 ```python
-print("hello world")
+def rowop(A):
+  pass
 ```
 

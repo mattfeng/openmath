@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/openmath",
   plugins: [
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
@@ -31,6 +32,7 @@ module.exports = {
             resolve: `gatsby-remark-highlight-code`,
             options: {
               lineNumbers: true,
+              theme: `monokai`
             }
           }
         ],
