@@ -16,8 +16,19 @@ $serif: "EB Garamond";
     font-family: $serif, serif;
   }
 
-  p, details {
+  p, details, li {
     font-size: 14pt;
+  }
+
+  table {
+    font-size: 14pt;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  table, td, th {
+    border: 1px solid lightgray;
+    padding: 5px;
   }
 
 }
