@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import { Link } from "gatsby"
 import Layout from "../components/layout"
 
 class Home extends Component {
@@ -16,17 +17,17 @@ class Home extends Component {
           </tr>
 
           <tr>
-            <td><a href="/linalg/">Linear Algebra</a></td>
+            <td><Link to="/linalg/">Linear Algebra</Link></td>
             <td>MIT 18.06, taught in Fall 2010.</td>
           </tr>
 
           <tr>
-            <td><a href="/diffeq/">Differential Equations</a></td>
+            <td><Link to="/diffeq/">Differential Equations</Link></td>
             <td>MIT 18.03, taught in Fall 2018.</td>
           </tr>
 
           <tr>
-            <td><a href="/introml/">Introduction to Machine Learning</a></td>
+            <td><Link to="/introml/">Introduction to Machine Learning</Link></td>
             <td>MIT 6.036, taught in Fall 2017.</td>
           </tr>
         </table>
