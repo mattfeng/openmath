@@ -1,0 +1,67 @@
+
+## 1.1 
+
+* R is obtained by filling the gaps in Q.
+* Questions
+  * What properties does the set of irrational numbers have?
+  * How do the sets of rational and irrational numbers fit together?
+  * Is there a kind of symmetry between the rationals and the irrationals, or is there some sense in which we can argue one type of raeal number is more common than the other?
+  * Can all irrational numbers be expressed as algebraic combinations of nth roots and rational numbers, or are there still other irrational numbers beyond those of this form?
+
+## 1.2 Some Preliminaries
+### Sets
+* Two sets A and B are disjoint if they share no elements in common; that is, their intersection is the empty set.
+* We will use an intuition definition of set as a **collection of objects**, as we will not encounter situations in which this impression on the behavior of sets is insuffient.
+
+### Functions
+* Function f: A \rightarrow B, A is the **domain**, B is the **codomain**, and {y \in B: y = f(x) for some x \in A} is the **range** (subset of B containing elements that are mapped to from some element of A).
+* The triangle inequality |a + b| \leq |a| + |b| is often used as |a - b| = |a - c + c - b| \leq |a - c| + |c - b|.
+
+### Logic and Proofs
+
+#### Theorem 1.2.6
+Two real numbers a and b are equal if and only if \forall \varepsilon > 0 it follows that |a - b| < \varepsilon.
+
+**Proof.**
+(\Longrightarrow)
+if a = b, then |a - b| = 0.
+
+(\Longleftarrow)
+If |a - b| < \varepsilon \forall \varepsilon > 0, \varepsilon \in \mathbb{R}, then a = b.
+
+Proof by contradiction. Support a \ne b. Then |a - b| = \varepsilon_0 > 0. But we assumed |a - b| < \varepsilon \forall \varepsilon, including \varepsilon_0. Because |a - b| = \varepsilon_0 and |a - b| < \varepsilon_0| cannot both be true, our initial assumption a \ne b is wrong, or a = b.
+
+### Induction
+
+General principle:
+* Show that 1 \in S.
+* Show that if n \in S, then n + 1 \in S.
+
+## 1.3 The Axiom of Completeness
+
+* List out the assumptions we will be making about the real numbers.
+
+### An initial definition for R
+
+1. R is a set that contains Q.
+2. Every element of R has an additive inverse, and every nonzero element of R has a multiplicative inverse.-> We assume R is a field.
+3. We assume R is ordered. -> R is an ordered field.
+
+!!! important
+**Axiom of Completeness.** Every nonempty set of real numbers that is bounded above has a least upper bound.
+!!! important
+
+
+### Least Upper Bounds and Greatest Lower Bounds
+**Definition 1.3.1.** A set A \subseteq \mathbb{R} is **bounded above** if there exists a number b \in \mathbb{R} (called the **upper bound**) such that a \leq b \forall a \in A.
+
+**Definition 1.3.2.** A real number s is the **least upper bound** (or **supremum**) for a set A \subseteq \mathbb{R} if:
+
+1. s is an upper bound for A; and
+2. if b is any upper bound for A, then s \leq b.
+
+**Definition 1.3.4.** A real number a_0 is a **maximum** of the set A if a_0 <u>is an element of </u> A and a_0 \geq a \forall a \in A.
+
+An alternative formulation of supremum is the following, which asserts that any attempt to shrink the supremum would invalidate the value as an upper bound.
+
+**Lemma 1.3.8.** Assume s \in \mathbb{R} is an upper bound for a set A \subseteq \mathbb{R}. Then s = \sup A if and only if \forall \varepsilon > 0, \exists a \in A satisfying s - \varepsilon < a.

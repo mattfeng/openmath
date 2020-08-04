@@ -1,0 +1,47 @@
+---
+title: Map of Differential Equations
+date: "2020-07-03"
+slug: "diffeq-map"
+---
+
+# Map of Differential Equations
+* Discrete equations
+  * Function maps
+  * Discrete stochastic (Gillespie/Markov) simulations
+* Ordinary differential equations (ODEs)
+* Split and Partitioned ODEs
+  * Symplectic integrators
+  * IMEX Methods
+* Stochastic ordinary differential equations (SODEs or SDEs)
+* Random differential equations (RODEs or RDEs)
+* Differential algebraic equations (DAEs)
+* Delay differential equations (DDEs)
+* Mixed discrete and continuous equations
+  * Hybrid Equations
+  * Jump Diffusions
+* (Stochastic) partial differential equations ((S)PDEs)
+  * Both finite difference and finite element methods.
+
+
+## Solvers
+* (5th order) Tsitouras method
+* Rosenbrock
+
+## "Go-to" solver choices
+
+|algorithm|use cases|
+|:-------:|:-------:|
+|``AutoTsit5(Rosenbrock23())``|both stiff and non-stiff equations. This is a good algorithm to use if you know nothing about the equation.|
+|``AutoVern7(Rodas5())``| both stiff and non-stiff equations in a way that's efficiency for high accuracy|
+|``Tsit5()``|standard non-stiff. **first algorithm to try in most cases**|
+|``BS3()``| fast low accuracy non-stiff|
+|``Vern7()``|high accuracy non-stiff|
+|``Rodas4()`` or ``Rodas5()``| small stiff equations with Julia-defined types, events, etc.|
+|``KenCarp4()`` or ``TRBDF2()``|medium sized (100-2000 ODEs) stiff equations|
+|``RadauIIA()``| really high accuracy stiff equations|
+|``CVODE_BDF()``| large stiff equations|
+
+## Ordinary differential equations
+* **homogeneous.** right-hand side is zero (c.f. _nonhomogeneous_).
+* **order.** the highest derivative in the differential equation.
+* **linear.** linear function of the derivatives (dependent variables); independent variables (e.g. time, space) may be non-linear.

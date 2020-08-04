@@ -1,0 +1,89 @@
+---
+title: Definitions and theorems in abstract algebra
+date: "2020-07-21"
+slug: algebra
+---
+
+# Definitions and theorems in abstract algebra
+
+<Box type={"Definition"} number={4.1} author={"Fraleigh"}>
+
+A **group** is a set <M>G</M>, <u>closed under a binary operation</u> <M>*</M>, such that three axioms are satisfied:
+
+* **G1. (Associative)** For all <M>a, b, c \in G</M>, we have
+
+<BlockMath>
+  (a * b) * c = a * (b * c)
+</BlockMath>
+
+* **G2. (Identity)** There is an element <M>e \in G</M> such that for all <M>x \in G</M>, 
+
+<BlockMath>
+  e * x = x * e = x
+</BlockMath>
+
+* **G3. (Inverse)** For each <M>a \in G</M>, there is a corresponding element <M>a' \in G</M> such that
+
+<BlockMath>
+  a * a' = a' * a = e
+</BlockMath>
+
+</Box>
+
+<Box type={"Definition"} number={18.1} author={"Fraleigh"}>
+
+A **ring** <M> \langle R, +, \cdot \rangle</M> is a set <M>R</M> with two binary operations <M>+</M> and <M>\cdot</M>, which we call _addition_ and _multiplication_, defined on <M>R</M> such that the following axioms are satisfied:
+
+* **R1. (Addition is abelian)** <M>\langle R, +\rangle</M> is an abelian group.
+* **R2. (Associative)** Multiplication is associative.
+* **R3. (Distributive)** For all <M>a, b, c \in R</M>, the **left distributive law** <M>a(b + c) = (ab) + (ac)</M> &nbsp;and **right distributive law** <M>(a + b)c = (ac) + (bc)</M>&nbsp; hold.
+
+<br/>
+
+Because we denote <M>n</M> repeated sums as <M math={String.raw`a + a + a + ... + a = n \cdot a, n \in \mathbb{Z}, a \in R`} /> when refering to multiplication within the ring, we use the **juxtaposition notation** <M>ab</M> in lieu of <M>a \cdot b</M>.
+
+We use <M>0</M> to denote the additive identity of the ring, and <M>-a</M> to denote the additive inverse of <M>a</M>.
+
+</Box>
+
+<Box type={"Theorem"} number={18.8} author={"Fraleigh"}>
+
+If <M>R</M> is a ring with additive identity <M>0</M>, then <M>\forall a, b \in R</M> we have:
+
+1. <M>0a = a0 = 0</M>
+2. <M>a(-b) = (-a)b = -(ab)</M>
+3. <M>(-a)(-b) = ab</M>
+
+<br/>
+
+**Proof.** In order to prove properties about multiplication, we're going to need to use the distributive law, since that is the only tool afforded to us by the definition of a ring.
+
+For Property 1, by axioms **R1** and **R2**, **TODO**
+
+</Box>
+
+<Box type={"Definition"} number={18.14} author={"Fraleigh"}>
+
+A ring in which the <u>multiplication</u> is commutative is a **commutative ring.** A ring with a <u>multiplicative</u> identity element is a **ring with unity**; the multiplicative identity element <M math="1"/> is called &ldquo;**unity**&rdquo;.
+
+</Box>
+
+<Box type={"Definition"} comment={"Fields and Units"} number={18.16} author={"Fraleigh"}>
+
+Let <M math="R"/> be a ring with unity <M math="1 \ne 0"/>. An element <M math="u \in R"/> is a **unit** of <M math="R"/> if it has a multiplicative inverse in <M>R</M>. If every <u>nonzero</u> element of <M>R</M> is a unit, the <M>R</M> is a **division ring** (or **skew field**). A **field** is a <u>commutative</u> division ring. 
+
+A field has the obeys the following:
+
+1. <M math="\langle F, + \rangle"/> is an abelian group with identity <M math="0"/>.
+2. <M math="\langle F \setminus \{0\}, \cdot \rangle"/> is an abelian group with identity <M math="1 \ne 0"/>.
+3. Both the **left distributive law** and **right distributive law** hold.
+
+</Box>
+
+<Box type={"Note"} comment={"Zero ring"}>
+
+The only ring <M math="R"/> with <M math="1 = 0"/> is the zero ring of one element <M math="\{ 0 \}"/>.
+
+Source: https://en.wikipedia.org/wiki/Ring_(mathematics)#Basic_properties
+
+</Box>

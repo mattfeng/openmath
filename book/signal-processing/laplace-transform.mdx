@@ -1,0 +1,42 @@
+---
+title: "Laplace Transform Reference Table"
+date: "2020-07-03"
+slug: laplace
+---
+
+# Laplace Transform Reference Table
+
+The Laplace transform <InlineMath math={String.raw`\mathcal{L}`}/> of a function <InlineMath math={"f(t)"} /> is defined as follows:
+
+<BlockMath math={String.raw`\mathcal{L}\{f(t)\} = F(s) = \int_0^\infty e^{-st}f(t)dt`} />
+
+<table class="laplace">
+  <thead>
+    <th>Original Function</th>
+    <th>Laplace Transform</th>
+  </thead>
+  <tr>
+    <td class="col1">
+      <BlockMath math={String.raw`f(t) = 1`} />
+    </td>
+    <td class="col2">
+      <BlockMath math={String.raw`F(s) = \int_0^\infty e^{-st}f(t)dt = \frac{1}{s}, \text{ if } s > 0.`}/>
+    </td>
+  </tr>
+  <tr>
+    <td class="col1">
+      <BlockMath math={String.raw`f(t) = e^{at}`} />
+    </td>
+    <td class="col2">
+      <BlockMath math={String.raw`F(s) = \int_0^\infty e^{-st}e^{at}dt = \frac{1}{s-a}, \text{ if } s > a.`}/>
+    </td>
+  </tr>
+  <tr>
+    <td class="col1">
+      <BlockMath math={String.raw`f(t) = \sin(at)`} />
+    </td>
+    <td class="col2">
+      <BlockMath math={String.raw`F(s) = \int_0^\infty e^{-st}\sin(at)dt = \frac{a}{s^2 + a^2}`}/>
+    </td>
+  </tr>
+</table>
