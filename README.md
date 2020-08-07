@@ -9,3 +9,5 @@
 ## 🖼️ Visualizations
 * MIT Mathlets: [http](http://mathlets.org/mathlets/)
 
+## Journals
+* _Technometrics._ ([wiki-http](https://en.wikipedia.org/wiki/Technometrics))
