@@ -31,6 +31,11 @@ class Home extends Component {
             <td>MIT 6.036, taught in Fall 2017.</td>
           </tr>
         </table>
+
+      <h2>Other links</h2>
+      <ul>
+        <li><Link to="/resources">Additional resources</Link>.</li>
+      </ul>
       </Layout>
     )
   }
